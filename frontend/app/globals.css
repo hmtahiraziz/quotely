@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Geist", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background font-sans text-body-md text-on-surface antialiased;
+  min-height: 100vh;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  @apply bg-primary-fixed text-on-primary-fixed;
+}
